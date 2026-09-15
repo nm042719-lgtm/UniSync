@@ -1,8 +1,10 @@
 from fastapi import FastAPI
+from app.config import APP_NAME, APP_VERSION
+
 
 app = FastAPI(
-    title="UniSync API",
-    version="0.1.0"
+    title=APP_NAME,
+    version=APP_VERSION
 )
 
 
